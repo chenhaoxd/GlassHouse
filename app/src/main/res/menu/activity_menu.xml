@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cook_menu_item"
+        android:title="@string/cook_this">
+    </item>
+    <item
+        android:id="@+id/add_menu_item"
+        android:title="@string/add_item">
+    </item>
+    <item
+        android:id="@+id/go_back"
+        android:title="@string/go_back">
+    </item>
+</menu>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Saphire</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cook_this">Cook This</string>
+    <string name="add_item">Add Item</string>
+    <string name="no_item">No Item</string>
+    <string name="help">Help</string>
+    <string name="search_device">Search Device</string>
+    <string name="no_device">No Device</string>
+    <string name="title_activity_add_device">Hello World Immersion</string>
+    <string name="title_activity_help">Hello World Immersion</string>
+    <string name="microwave">Microwave</string>
+    <string name="washer">Washer</string>
+    <string name="fridge">Fridge</string>
+    <string name="title_activity_microwave">Hello World Immersion</string>
+    <string name="saphire">SAPHIRE</string>
+    <string name="go_back">Go Back</string>
+    <string name="add_device">Add Device</string>
+    <string name="title_activity_washer">washer</string>
+    <string name="start_washer">Start washer</string>
+    <string name="stop_washer">Stop washer</string>
+    <string name="stopped">Stopped</string>
+    <string name="started">Started</string>
+    <string name="in_fridge">In fridge</string>
+    <string name="add_to_fridge">Add to fridge</string>
+    <string name="title_activity_fridge">fridgeactivity</string>
+    <string name="title_activity_light">lightactivity</string>
+    <string name="title_activity_roomba">roombaactivity</string>
+    <string name="lights_on">Lights On</string>
+    <string name="lights_off">Lights On</string>
+    <string name="start_roomba">Start Roomba</string>
+    <string name="stop_roomba">Stop Roomba</string>
+    <string name="light">Light</string>
+    <string name="roomba">Roomba</string>
+    <string name="glasshouse">Glass House</string>
+
+
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chen.saphire" >
+
+    <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/glasshouse"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.MAIN" />
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+        </activity>
+        <activity
+            android:name=".MicrowaveActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_microwave" >
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".AddDeviceActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_add_device" >
+        </activity>
+        <activity
+            android:name=".WasherActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_washer" >
+        </activity>
+        <activity
+            android:name=".FridgeActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_fridge" >
+        </activity>
+        <activity
+            android:name=".LightActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_light" >
+        </activity>
+        <activity
+            android:name=".RoombaActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_roomba" >
+        </activity>
+    </application>
+
+</manifest>
