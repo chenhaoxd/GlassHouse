@@ -172,12 +172,6 @@ public class MicrowaveActivity extends Activity implements Observer{
         startActivity(intent);
     }
 
- /*   public void gateWayFunction() {
-        //Log.d("Hello", "gateWayFunction");
-        mView = buildView();
-        mCardScroller.getAdapter().notifyDataSetChanged();
-    }*/
-
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == R.id.add_menu_item && resultCode == RESULT_OK) {
             List<String> results = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
@@ -197,36 +191,4 @@ public class MicrowaveActivity extends Activity implements Observer{
             mCardScroller.getAdapter().notifyDataSetChanged();
         }
     }
-
-    /*private class SendPostTask extends AsyncTask<Boolean, Boolean, Boolean> {
-        @Override
-        protected Boolean doInBackground(Boolean... params) {
-            Log.d("Hello", "doInBackground");
-            String url = "http://saphire-server-dev.elasticbeanstalk.com/simulators/microwave";
-            //String url = "http://httpbin.org/post";
-            ArrayList<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
-            urlParameters.add(new BasicNameValuePair("command", "Start Cooking"));
-            urlParameters.add(new BasicNameValuePair("state", "'start'"));
-
-            try{
-                HttpClient client = new DefaultHttpClient();
-                HttpPost post = new HttpPost(url);
-                post.setEntity(new UrlEncodedFormEntity(urlParameters));
-                Log.d("Hello", "tryblock");
-                HttpResponse postResponse = client.execute(post);
-
-            }catch(Exception e){
-                Log.e("POST", e.getMessage());
-            }
-            boolean result = true;
-            return result;
-        }
-
-        protected void onPostExecute(Boolean result) {
-            //Do something when finished
-            doneFlag = result;
-            //Log.d("Hello", "onPostExecute");
-            gateWayFunction();
-        }
-    }*/
 }

@@ -116,20 +116,34 @@ public class AddDeviceActivity extends Activity {
     }
 
     public void microwaveView(){
-        Intent intent = new Intent(this, MicrowaveActivity.class);
+        Intent intent = new Intent(this, SettingActivity.class);
+        intent.putExtra("Key", 0);
         startActivity(intent);
     }
 
     public void washerView(){
-        Intent intent = new Intent(this, MicrowaveActivity.class);
+        Intent intent = new Intent(this, SettingActivity.class);
+        intent.putExtra("Key", 1);
         startActivity(intent);
     }
 
     public void lightView(){
-        Intent intent = new Intent(this, MicrowaveActivity.class);
+        Intent intent = new Intent(this, SettingActivity.class);
+        intent.putExtra("Key", 2);
         startActivity(intent);
     }
 
+    public void roombaView(){
+        Intent intent = new Intent(this, SettingActivity.class);
+        intent.putExtra("Key", 3);
+        startActivity(intent);
+    }
+
+    public void frigeView(){
+        Intent intent = new Intent(this, SettingActivity.class);
+        intent.putExtra("Key", 4);
+        startActivity(intent);
+    }
     @Override
     public boolean onMenuItemSelected(int featuredId, MenuItem item) {
         if (featuredId == WindowUtils.FEATURE_VOICE_COMMANDS) {
@@ -142,6 +156,12 @@ public class AddDeviceActivity extends Activity {
                     break;
                 case R.id.Light:
                     lightView();
+                    break;
+                case R.id.Roomba:
+                    roombaView();
+                    break;
+                case R.id.Fridge:
+                    frigeView();
                     break;
                 default:
                     break;

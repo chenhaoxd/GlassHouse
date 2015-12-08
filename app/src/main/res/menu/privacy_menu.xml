@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/start_roomba_item"
-        android:title="@string/start_roomba">
+        android:id="@+id/p_no_item"
+        android:title="No">
+    </item>
+    <item
+        android:id="@+id/p_yes_item"
+        android:title="Yes">
     </item>
     <item
         android:id="@+id/go_back"

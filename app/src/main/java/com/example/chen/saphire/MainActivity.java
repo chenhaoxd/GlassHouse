@@ -148,10 +148,8 @@ public class MainActivity extends Activity {
     }
 
     public void helpView(){
-        /*Intent intent = new Intent(this, HelpActivity.class);
-        startActivity(intent);*/
-
-         ///       startActivityForResult(intent, UPC_CODE_REQUEST);
+        Intent intent = new Intent(this, HelpActivity.class);
+        startActivity(intent);
     }
 
 
@@ -159,6 +157,11 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, AddDeviceActivity.class);
         startActivity(intent);
     }
+
+    /*public void privacyView(){
+        Intent intent = new Intent(this, SettingActivity.class);
+        startActivity(intent);
+    }*/
 
     @Override
     public boolean onMenuItemSelected(int featuredId, MenuItem item) {
@@ -170,6 +173,9 @@ public class MainActivity extends Activity {
                 case R.id.search_device:
                     addDeviceView();
                     break;
+                /*case R.id.privacy:
+                    privacyView();
+                    break;*/
                 default:
                     break;
             }

@@ -33,7 +33,8 @@
     <string name="stop_roomba">Stop Roomba</string>
     <string name="light">Light</string>
     <string name="roomba">Roomba</string>
-    <string name="glasshouse">Glass House</string>
+    <string name="glasshouse">GlassHouse</string>
+    <string name="title_activity_setting">Hello World Immersion</string>
 
 
 
